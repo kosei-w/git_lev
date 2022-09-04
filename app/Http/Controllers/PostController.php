@@ -7,14 +7,6 @@ use App\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
-<<<<<<< HEAD
-{
-    public function index(Post $post)
-{
-    return view('posts/index')->with(['posts' => $post->getPaginateByLimit()]);
-}
-}
-=======
 
 {
 public function index(Post $post)
@@ -27,6 +19,4 @@ public function index(Post $post)
     return view('posts/show')->with(['post' => $post]);
 }
 }
-
->>>>>>> c1fa252 ([add]記事詳細画面)
 ?>
